@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>FlexBox</title>
+	<link rel="stylesheet" type="text/css" href="Style.css">
+</head>
+<body>
+	<p class="titulo">Formulario de encuesta</p>
+	<section>
+		
+
+		<form id="survey-form" method="GET" action="https://crossorigin.me/https://freecodecamp.com">
+
+<p class="info">Ayudanos a saber como podemos mejorar</p>
+	
+	<!--InputNombre Inicio-->
+    <div class="rowTab">
+      <div class="labels">
+        <label id="name-label" for="name">_Nombre: </label>
+      </div>
+
+      <div class="rightTab">
+        <input autofocus type="text" name="name" id="name" class="input-field" placeholder="Ingrese su nombre" required>
+      </div>
+    </div>
+    <!--InputNombre FIN-->
+	<!--InputEmail Inicio-->
+    <div class="rowTab">
+    	<div class="labels">
+    		<label id="email-label" for="email">_E-mail </label>
+    	</div>
+    	<div class="rightTab">
+    		<input type="email" name="email" class="input-field"placeholder="Ingrese su correo">
+    	</div>
+    </div>
+	<!--InputEmail FIN-->
+	<!--InputEdad Inicio-->
+	<div class="rowTab">
+		<div class="labels">
+			<label id="edad-label" for="edad">_Edad</label>
+		</div>
+
+		<div class="rightTab">
+			<input type="number" name="edad" id="number" min="1" max="130" class="input-field" placeholder="Edad">
+		</div>
+	</div>
+	
+	<!--InputEdad FIN-->
+	<!--InputROL Inicio-->
+	<div class="rowTab">
+		<div class="labels">
+			<label id="rol-label" for="rol">_Rol</label>
+		</div>
+		<div class="rightTab">
+			<select id="dropdown" name="currentPos" class="dropdown">
+				
+				<option disabled value>Selecciona una opcion</option>
+				<option value="Estudiante">Estudiante</option>
+				<option value="Trabajador">Trabajador Full time</option>
+				<option value="prefiero no decir">Prefiero no decirlo</option>
+				<option value="Otro">Otro</option>
+			</select>
+		</div>
+	</div>
+
+	<!--InputROL FIN-->
+	<!--InputRecomendacion Inicio -->
+	<div class="rowTab">
+		<div class="labels">
+			<label for="usuarioRanking">_Recomendarias esta carrera a otras personas</label>
+		</div>
+		<div class="rightTab">
+			<ul style="list-style: none;">
+				<li class="radio"><label>Definitibamente <input type="radio" name="Boton-radio" value="1" class="usuarioRanking"></label></li>
+				<li class="radio"><label>Quiza <input type="radio" name="Boton-radio" value="2" class="usuarioRanking"></label></li>
+				<li class="radio"><label>No <input type="radio" name="Boton-radio" value="3" class="usuarioRanking"></label></li>
+			</ul>
+		</div>
+
+	</div>
+
+
+
+
+
+	<!--InputRecomendacion FIN-->
+	<!--InputROL2 Inicio-->
+	<div class="rowTab">
+		<div class="labels">
+			<label id="rol2-label" for="rol2">_Que es lo que mas te gusta de esta carrera</label>
+		</div>
+		<div class="rightTab">
+			<select id="dropdown" name="currentPos" class="dropdown">
+				
+				<option disabled value>Selecciona una opcion</option>
+				<option value="Estudiante">La parte teorica</option>
+				<option value="Trabajador">La parte practica</option>
+				<option value="prefiero no decir">La salida laboral</option>
+				<option value="Otro">Otra</option>
+			</select>
+		</div>
+	</div>
+
+	<!--InputROL2 FIN-->
+
+<!--InputMejoras Inicio -->
+	<div class="rowTab">
+		<div class="labels">
+			<label for="preferencias">
+				_Que cosas pensas que pueden mejorarse en un futuro?
+			</label>
+		</div>
+		<div class="rightTab">
+			<ul id="preferencias" style="list-style: none;">
+				<li class="checkbox"><label><input type="checkbox" name="pref" value="1" class="usuarioRanking2">Trabajos practicos</label></li>
+				<li class="checkbox"><label><input type="checkbox" name="pref" value="2" class="usuarioRanking2">Evaluaciones</label></li>
+				<li class="checkbox"><label><input type="checkbox" name="pref" value="3" class="usuarioRanking2">Tutores de catedra</label></li>
+				<li class="checkbox"><label><input type="checkbox" name="pref" value="4" class="usuarioRanking2">Plan de materias</label></li>
+				<li class="checkbox"><label><input type="checkbox" name="pref" value="5" class="usuarioRanking2">Acompañamento a tesis</label></li>
+				<li class="checkbox"><label><input type="checkbox" name="pref" value="6" class="usuarioRanking2">Horarios</label></li>
+				<li class="checkbox"><label><input type="checkbox" name="pref" value="7" class="usuarioRanking2">Plan de correlativas</label></li>
+				<li class="checkbox"><label><input type="checkbox" name="pref" value="8" class="usuarioRanking2">Material de estudio</label></li>
+				<li class="checkbox"><label><input type="checkbox" name="pref" value="9" class="usuarioRanking2">Practicas profesionales</label></li>
+				<li class="checkbox"><label><input type="checkbox" name="pref" value="10" class="usuarioRanking2">Practicas Solidarias</label></li>
+				<li class="checkbox"><label><input type="checkbox" name="pref" value="11" class="usuarioRanking2">Innovacion</label></li>
+			</ul>
+
+		</div>
+
+
+	</div>
+<!--InputMejoras FIN-->
+<!--InputSugerencia Inicio -->
+	<div class="rowTab">
+		<div class="labels">
+			<label for="Commentario">_Tiene algun comentario o sugerencia?</label>
+		</div>
+		<div class="rightTab">
+			<textarea id="comentario" class="input-field" style="height: 50px;resize: vertical;" name="comentario" placeholder="Ingrese su comentario..."></textarea>
+
+		</div>
+
+
+	</div>
+	<div class="boton">	<button id="Enviar" type="submit">Enviar</button></div>
+
+</form>
+<!--InputSugerencia FIN-->
+</section>
+</body>
+</html>
